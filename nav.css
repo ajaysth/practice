@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.nav{
+    
+    border: 1px solid black;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(36,5,50,1) 34%, rgba(158,15,53,1) 100%, rgba(125,35,45,1) 100%);
+    
+}
+.logo{
+
+    font-size: 100px;
+}
+.logo img{
+    height: 80px;
+    margin-left: 10px;
+}
+.info ul li{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 20px;
+}
+.info ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: yellow;
+    font-family: 'Trebuchet MS';
+    font-size: 1.1em;
+    transition: 0.5s ease;
+}
+.info a:hover{
+    color: orange;
+    
+}
+.input{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input input{
+    border-radius: 20px;
+    padding: 3px 0;
+    margin-right: 20px;
+}
+
+#home{
+    height: 1080px;
+    background-image: url(pics/wall.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* animation: animateBg 2s linear infinite; */
+}
+/* .home .welcome{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    color: red;
+    cursor: pointer;
+    
+} */
+
+.home-content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* margin-top: 50px; */
+}
+.home-box{
+    margin-top: 180px;
+    height: 500px;
+    width: 80%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    animation-name: huhu;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+}
+
+.home-box .image{
+    border: none;
+    width: 40%;
+    background-image: url('pics/messi.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    animation-name: huhu;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation: animateBg 2s linear infinite;
+    
+    
+}
+
+@keyframes huhu{
+    0%{opacity: 0;}
+    /* 50%{opacity: 0.5;} */
+    100%{opacity: 1;}
+}
+
+.home-box .image img{
+    height: 300px;
+    
+}
+
+.home-box .home-text{
+    height: 80%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.home-text h2{
+    font-size: 50px;
+    color: rgb(255, 175, 14);
+    margin-top: 90px;
+}
+
+.home-text p{
+    margin-top: 30px;
+    font-size: 30px;
+    font-family:monospace;
+    color: chartreuse;
+}
+.home-text .leo{
+    margin-top: 20px;
+    font-size: 60px;
+    color: aquamarine;
+}
+.home-text .leo:hover{
+    transform: rotate(360deg);
+    animation-name: rotate;
+    animation-duration: 1s;
+    
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.home-text span{
+    color: white;
+}
+
+.agree-box{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+ .agree-box .agree{
+    height: 100px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    
+}
+.agree .agree-cont p{
+    font-size: 30px;
+    color: rgb(251, 251, 251);
+}
+
+.agree-cont .btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.agree-cont button{
+    background: none;
+    color: yellow;
+    border: 2px solid rgb(173, 4, 15);
+    border-radius: 15px;
+    
+    padding: 8px;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+.agree-cont button:hover{
+    background-color: yellow;
+    color: red;
+    border: 2px solid yellow;
+}
+
+
+@keyframes animateBg{
+    100%{
+        filter:hue-rotate(360deg)
+    }
+}
+
+
+
+#contact{
+    height: 800px;
+    background-color: yellow;
+}
+#aboutus{
+    height: 900px;
+    background-color: pink;
+}
+
+
+.icon-content{
+    margin-top: 70px;
+    border: transparent;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-content .icon-box{
+    width: 200px;
+}
+.icon-box h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orange;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.icon-box .icons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+
+    
+}
+.icon-box .icons a{
+    color: white;
+    transition: 0.8s ease;
+}
+.icons  a i{
+    cursor: pointer;
+}
+ .icons .fb:hover{
+    color: #0084ff;
+}
+.icons .insta:hover{
+    color: linear-gradient(#f9ce34, #ee2a7b, #6228d7);
+    
+}
+.icons .twt:hover{
+    color: black;
+}
+.icons .yt:hover{
+    color: red;
+}
+
